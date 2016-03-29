@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Mock Assimilator Data Controller</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="/webjars/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link rel='stylesheet' id='responsive-slider-css'  href='https://www.bettercloud.com/wp-content/plugins/responsive-slider/css/responsive-slider.css?ver=0.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='bootstrap-css'  href='https://www.bettercloud.com/wp-content/themes/bc-bootstrap/bootstrap/css/bootstrap.min.css?ver=3.1.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='google_fonts-css'  href='//fonts.googleapis.com/css?family=Open+Sans:300,400,700|Raleway:400,300,700' type='text/css' media='screen' />
+    <link rel='stylesheet' id='font-awesome-css'  href='https://www.bettercloud.com/wp-content/themes/bc-bootstrap/font-awesome/css/font-awesome.min.css?ver=4.0.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='fancybox-css'  href='https://www.bettercloud.com/wp-content/themes/bc-bootstrap/bootstrap/css/jquery.fancybox.css?ver=2.1.5' type='text/css' media='all' />
+    <link rel='stylesheet' id='bc-bootstrap-css'  href='https://www.bettercloud.com/wp-content/themes/bc-bootstrap/style.css?ver=4.3.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='tabby.css-css'  href='https://www.bettercloud.com/wp-content/plugins/tabby-responsive-tabs/css/tabby.css?ver=1.2.1' type='text/css' media='all' />
+    <script src="/webjars/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <p></p>
+    <form action="#" th:action="@{/turnUpHey}" th:object="${turnUp}" method="post">
+        <p>first: <input type="text" th:field="*{firstName}" /></p>
+        <p>last: <input type="text" th:field="*{lastName}" /></p>
+        <p><input type="submit" value="yo" /> </p>
+    </form>
+</div>
+</body>
+</html>
