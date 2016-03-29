@@ -11,7 +11,7 @@ import java.io.IOException;
 public class TurnUpController {
 
     @RequestMapping("/turnUp")
-    public TurnUp domain(@RequestParam(value="name")String name) throws IOException {
-        return new TurnUp(name);
+    public TurnUp domain(@RequestParam(value="first")String name, @RequestParam(value="last")String lastName) throws IOException {
+        return new TurnUp(name, lastName);
     }
 }

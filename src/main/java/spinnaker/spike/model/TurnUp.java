@@ -2,18 +2,22 @@ package spinnaker.spike.model;
 
 public class TurnUp {
 
-    private String message;
+    private String firstName;
 
-    public TurnUp(String message) {
-        this.message = message;
+    private String lastName;
+
+    public TurnUp(String firstName, String lastName) {
+
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
+    public void setMessage(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
     public String getMessage() {
-
-        return "Turn up "+ message;
+        return "Turn up the fuck up"+ firstName + " " + lastName;
     }
 }
