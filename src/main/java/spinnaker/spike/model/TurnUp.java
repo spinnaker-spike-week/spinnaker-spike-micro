@@ -18,6 +18,6 @@ public class TurnUp {
     }
 
     public String getMessage() {
-        return "Turn up the fuck up"+ firstName + " " + lastName;
+        return "Turn the f up "+ firstName + " " + lastName;
     }
 }
