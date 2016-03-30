@@ -36,11 +36,3 @@ def runTests(duration) {
         sh "sleep ${duration}"
         }
     } 
-
-def deploy(id) {
-    sh "cp x.war /tmp/${id}.war"
-}
-
-def undeploy(id) {
-    sh "rm /tmp/${id}.war"
-}
