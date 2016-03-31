@@ -3,7 +3,6 @@
 stage 'Dev'
 node {
     checkout scm
-    dir('target') {stash name: 'war', includes: 'x.war'}
 }
 
 stage 'QA'
@@ -36,13 +35,4 @@ def runTests(duration) {
     node {
         sh "sleep ${duration}"
         }
-    }
-
-def deploy(id) {
-    unstash 'war'
-    sh "cp x.war /tmp/${id}.war"
-}
-
-def undeploy(id) {
-    sh "rm /tmp/${id}.war"
-}
+    } 
