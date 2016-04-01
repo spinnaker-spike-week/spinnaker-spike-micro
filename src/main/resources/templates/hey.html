@@ -18,17 +18,20 @@
         audio.play();
     }
 </script>
-<audio id="audio" src="https://ia601505.us.archive.org/6/items/Charles_201603/Charles.mp3"></audio>
+<audio id="audio" src="https://ia801508.us.archive.org/22/items/CharlieAmped/CharlieAmped.mp3"></audio>
 <div class="container">
     <p></p>
     <table class="table table-striped table-bordered">
         <tr>
-            <td>turn up</td><td th:text="${turnUp.firstName}"></td>
+            <td><button onclick="play()"> turn up</button> </td><td th:text="${turnUp.firstName}"></td>
         </tr>
     </table>
     <center>
-    <a href="/turnUp">turn up again</a>
+        <a href="/turnUp">turn up again</a>
     </center>
+    <script>
+        window.onload = play()
+    </script>
 </div>
 </body>
 </html>
